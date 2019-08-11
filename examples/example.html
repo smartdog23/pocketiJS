@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="../pocketi.js"></script>
+    <title>pocketiJS - example</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>pocketiJS - Example</h1>
+        <br>
+        <h3>Click in the buttons below!</h3>
+        <br>
+        <input type="button" id="btn_a" value="Button A" />
+        <input type="button" id="btn_b" value="Button B" />
+        <br><br>
+        <input type="text" id="message" size="40" />
+    </div>
+</body>
+<script>
+    _p.id("btn_a").click(function () {
+        console.log('clicked button A');
+        _p.id("message").value('clicked on button A!');
+    });
+    _p.id("btn_b").click(function () {
+        console.log('clicked button B');
+        _p.id("message").value('clicked on button B!');
+    });
+</script>
+
+</html>
