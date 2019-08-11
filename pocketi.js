@@ -52,6 +52,16 @@ function pocketi() {
         click(__action) {
             this._eventsGlobal(this._object, 'click', __action);
             return this;
+        },
+        // when mouse is over the element
+        mouseover(__action) {
+            this._eventsGlobal(this._object, 'mouseover', __action);
+            return this;
+        },
+        // when mouse is out the element
+        mouseout(__action) {
+            this._eventsGlobal(this._object, 'mouseout', __action);
+            return this;
         }
     }
 }
