@@ -18,6 +18,32 @@ function pocketi() {
         cl(__class) {
             this._object = document.getElementsByClassName(__class);
             return this;
+        },
+        
+        // ##### basic #####
+        // get or set the value 
+        value(__value) {
+            if(__value == undefined) {
+                return this._object.value;
+            }
+            this._object.value = __value;
+        },
+
+        // ##### events #####
+        _eventsGlobal(__object, __event, __action) {
+            if(Array.isArray(__object)) {
+                __object.forEach(element => {
+                    element.addEventListener(__event, __action, false);
+                });
+                return __object;   
+            }
+            __object.addEventListener(__event, __action, false);
+            return __object;
+        },
+        // click event
+        click(__action) {
+            this._eventsGlobal(this._object, 'click', __action);
+            return this;
         }
     }
 }
