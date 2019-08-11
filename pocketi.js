@@ -28,6 +28,14 @@ function pocketi() {
             }
             this._object.value = __value;
         },
+        // show the selected element
+        show() {
+            this._object.style.display = "block";
+        },
+        // hide the selected element
+        hide() {
+            this._object.style.display = "none";
+        },
 
         // ##### events #####
         _eventsGlobal(__object, __event, __action) {
