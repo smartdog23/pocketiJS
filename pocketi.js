@@ -1,7 +1,7 @@
  /*!
  * pocketiJS - A Lightweight Simple Javascript library v1.0.0
  * Copyright (c) 2019 Valdir Pereira Lourenco
- * https://github.com/smartdog23/pocketiJS
+ * https://github.com/valdirlourenco/pocketiJS
  * Licensed under the MIT license
  * https://valdir.dev/mit-license
  */
